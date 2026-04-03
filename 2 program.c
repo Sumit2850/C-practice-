@@ -5,7 +5,7 @@ int main(){
   int c, f; 
   scanf("%d", &c);
   f = c*9/5+32;
-  printf(f);
+  printf("%d", f);
   return(0);
   
 }
