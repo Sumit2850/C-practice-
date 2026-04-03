@@ -2,24 +2,19 @@
   "version": "2.0.0",
   "tasks": [
     {
-      "label": "build and run C file",
+      "label": "build C program",
       "type": "shell",
       "command": "gcc",
       "args": [
         "-g",
         "${file}",
         "-o",
-        "${fileDirname}/${fileBasenameNoExtension}.exe"
+        "${fileDirname}\\${fileBasenameNoExtension}.exe"
       ],
       "group": {
         "kind": "build",
         "isDefault": true
       }
-    },
-    {
-      "label": "run executable",
-      "type": "shell",
-      "command": "${fileDirname}/${fileBasenameNoExtension}.exe"
     }
   ]
 }
